@@ -120,7 +120,7 @@ if (Auth0)
 
 //password reset
 //as Auth0 does not support similar options (languageDictionary), we have to declare a global variable for language translation
-var auth0PasswordResetDict = {
+window.auth0PasswordResetDict = {
     passwordPlaceholder: "your new password",
     passwordConfirmationPlaceholder: "confirm your new password",
     passwordConfirmationMatchError: "Please ensure the password and the confirmation are the same.",
