@@ -1,8 +1,7 @@
-﻿//login page
-var auth0 = Auth0 || null;
-if (auth0 != null)
+//check if login page as it will throw error if the page not including lock.js
+if (window.location.pathname.indexOf('login'))
 {
-    auth0.registerLanguageDictionary("fr",
+    Auth0.registerLanguageDictionary("fr",
     {
         "error": {
             "forgotPassword": {
