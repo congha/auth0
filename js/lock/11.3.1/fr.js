@@ -1,4 +1,5 @@
-﻿Auth0.registerLanguageDictionary("fr",
+﻿//login page
+Auth0.registerLanguageDictionary("fr",
 {
     "error": {
         "forgotPassword": {
@@ -113,3 +114,31 @@
     "mfaCodeErrorHint": "Utilisez des numÃ©ros %d",
     "showPassword": "Montrer le mot de passe"
 });
+
+//password reset
+//as Auth0 does not support similar options (languageDictionary), we have to declare a global variable for language translation
+var auth0PasswordResetDict = {
+    passwordPlaceholder: "your new password",
+    passwordConfirmationPlaceholder: "confirm your new password",
+    passwordConfirmationMatchError: "Please ensure the password and the confirmation are the same.",
+    passwordStrength: {
+        containsAtLeast: "Contain at least %d of the following %d types of characters:",
+        identicalChars: "No more than %d identical characters in a row (e.g., \"%s\" not allowed)",
+        nonEmpty: "Non-empty password required",
+        numbers: "Numbers (i.e. 0-9)",
+        lengthAtLeast: "At least %d characters in length",
+        lowerCase: "Lower case letters (a-z)",
+        shouldContain: "Should contain:",
+        specialCharacters: "Special characters (e.g. !@#$%^&*)",
+        upperCase: "Upper case letters (A-Z)"
+    },
+    successMessage: "Your password has been reset successfully.",
+    configurationError: "An error ocurred. There appears to be a misconfiguration in the form.",
+    networkError: "The server cannot be reached, there is a problem with the network.",
+    timeoutError: "The server cannot be reached, please try again.",
+    serverError: "There was an error processing the password reset.",
+    headerText: "Enter a new password for<br />{email}",
+    title: "Change Password",
+    weakPasswordError: "Password is too weak.",
+    passwordHistoryError: "Password has previously been used."
+  }
