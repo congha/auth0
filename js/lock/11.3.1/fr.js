@@ -60,7 +60,7 @@
     "invalidErrorHint": "Invalide",
     "lastLoginInstructions": "DerniÃ¨re connexion avec",
     "loginAtLabel": "Connexion Ã  %s",
-    "loginLabel": "Connexion",
+    "loginLabel": "Connexion 1",
     "loginSubmitLabel": "Connexion",
     "loginWithLabel": "Se connecter avec %s",
     "notYourAccountAction": "Ceci nâ€™est pas votre compte ?",
