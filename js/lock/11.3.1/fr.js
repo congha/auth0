@@ -121,9 +121,9 @@ if (window.location.pathname.indexOf('login') != -1)
 //password reset
 //as Auth0 does not support similar options (languageDictionary), we have to declare a global variable for language translation
 window.auth0PasswordResetDict = {
-    passwordPlaceholder: "your new password",
-    passwordConfirmationPlaceholder: "confirm your new password",
-    passwordConfirmationMatchError: "Please ensure the password and the confirmation are the same.",
+    passwordPlaceholder: "Votre nouveau mot de passe",
+    passwordConfirmationPlaceholder: "confirme ton nouveau mot de passe",
+    passwordConfirmationMatchError: "Veuillez vous assurer que le mot de passe et la confirmation sont identiques.",
     passwordStrength: {
         containsAtLeast: "Contain at least %d of the following %d types of characters:",
         identicalChars: "No more than %d identical characters in a row (e.g., \"%s\" not allowed)",
@@ -141,7 +141,7 @@ window.auth0PasswordResetDict = {
     timeoutError: "The server cannot be reached, please try again.",
     serverError: "There was an error processing the password reset.",
     headerText: "Enter a new password for<br />{email}",
-    title: "Change Password",
-    weakPasswordError: "Password is too weak.",
-    passwordHistoryError: "Password has previously been used."
+    title: "Changer le mot de passe",
+    weakPasswordError: "Le mot de passe est trop faible.",
+    passwordHistoryError: "Le mot de passe a déjà été utilisé."
   }
