@@ -1,7 +1,8 @@
 ﻿//login page
-if (Auth0)
+var auth0 = Auth0 || null;
+if (auth0 != null)
 {
-    Auth0.registerLanguageDictionary("fr",
+    auth0.registerLanguageDictionary("fr",
     {
         "error": {
             "forgotPassword": {
