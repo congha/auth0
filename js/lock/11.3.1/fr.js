@@ -1,5 +1,5 @@
-//check if login page as it will throw error if the page not including lock.js
-if (window.location.pathname.indexOf("login") != -1) {
+//login page
+if (typeof Auth0 != 'undefined') {
     Auth0.registerLanguageDictionary("fr",
     {
         "error": {
