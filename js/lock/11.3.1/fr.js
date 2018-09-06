@@ -123,27 +123,27 @@ if (window.location.pathname.indexOf('login') != -1)
 window.GetResetPasswordLangDict = function() {
     return {
         passwordPlaceholder: "Votre nouveau mot de passe",
-        passwordConfirmationPlaceholder: "confirme ton nouveau mot de passe",
-        passwordConfirmationMatchError: "Veuillez vous assurer que le mot de passe et la confirmation sont identiques.",
+        passwordConfirmationPlaceholder: "Confirmer votre nouveau mot de passe",
+        passwordConfirmationMatchError: "Veuillez vous assurer que votre mot de passe et la confirmation sont identiques.",
         passwordStrength: {
-            containsAtLeast: "Contain at least %d of the following %d types of characters:",
-            identicalChars: "No more than %d identical characters in a row (e.g., \"%s\" not allowed)",
-            nonEmpty: "Non-empty password required",
-            numbers: "Numbers (i.e. 0-9)",
-            lengthAtLeast: "At least %d characters in length",
-            lowerCase: "Lower case letters (a-z)",
-            shouldContain: "Should contain:",
-            specialCharacters: "Special characters (e.g. !@#$%^&*)",
-            upperCase: "Upper case letters (A-Z)"
+            containsAtLeast: "Doit comporter  au moins %d des caractères suivants %d",
+            identicalChars: "Vous ne pouvez ajouter plus de %d de caractères identiques à la suite (ex., \"%s\" non-autorisé)",
+            nonEmpty: "Merci d'entrer un mot de passe non-vide",
+            numbers: "Nombre (c.-à-d. : 0-9)",
+            lengthAtLeast: "Le nombre de caractères doit étre au moins de %d",
+            lowerCase: "Lettres en minuscule (a-z)",
+            shouldContain: "Doit comporter:",
+            specialCharacters: "Caractères spéciales (ex. : !@#$%^&*)",
+            upperCase: "Lettres en majuscule (A-Z)"
         },
-        successMessage: "Your password has been reset successfully.",
-        configurationError: "An error ocurred. There appears to be a misconfiguration in the form.",
-        networkError: "The server cannot be reached, there is a problem with the network.",
-        timeoutError: "The server cannot be reached, please try again.",
-        serverError: "There was an error processing the password reset.",
-        headerText: "Enter a new password for<br />{email}",
-        title: "Changer le mot de passe",
-        weakPasswordError: "Le mot de passe est trop faible.",
-        passwordHistoryError: "Le mot de passe a déjà été utilisé."
+        successMessage: "Votre mot de passe a été modifié avec succès",
+        configurationError: "Un problème est survenu. Il semble avoir une mauvaise configuration",
+        networkError: "Le serveur est inacessible, problème de connexion au réseau",
+        timeoutError: "Le server est inaccessible, merci de réessayer",
+        serverError: "Une erreur est survenue lors de la réinitialisation de votre mot de passe",
+        headerText: "Entrer un nouveau mot de passe pour <br />{email}",
+        title: "Changer de mot de passe",
+        weakPasswordError: "Mot de passe trop faible",
+        passwordHistoryError: "Mot de passe déjà utilisé"
     }
 };
