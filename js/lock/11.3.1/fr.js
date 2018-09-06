@@ -1,3 +1,4 @@
+(function() {
 //check if login page as it will throw error if the page not including lock.js
 if (window.location.pathname.indexOf('login') != -1)
 {
@@ -145,3 +146,4 @@ window.auth0PasswordResetDict = {
     weakPasswordError: "Le mot de passe est trop faible.",
     passwordHistoryError: "Le mot de passe a déjà été utilisé."
   }
+})();
