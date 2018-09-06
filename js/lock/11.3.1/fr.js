@@ -120,7 +120,7 @@ if (window.location.pathname.indexOf('login') != -1)
 
 //password reset
 //as Auth0 does not support similar options (languageDictionary), we have to declare a global variable for language translation
-function GetResetPasswordLangDict() {
+window.GetResetPasswordLangDict() = function() {
     return {
         passwordPlaceholder: "Votre nouveau mot de passe",
         passwordConfirmationPlaceholder: "confirme ton nouveau mot de passe",
