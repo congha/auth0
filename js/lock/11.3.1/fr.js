@@ -120,30 +120,6 @@ if (window.location.pathname.indexOf('login') != -1)
 
 //password reset
 //as Auth0 does not support similar options (languageDictionary), we have to declare a global variable for language translation
-window.GetResetPasswordLangDict() = function() {
-    return {
-        passwordPlaceholder: "Votre nouveau mot de passe",
-        passwordConfirmationPlaceholder: "confirme ton nouveau mot de passe",
-        passwordConfirmationMatchError: "Veuillez vous assurer que le mot de passe et la confirmation sont identiques.",
-        passwordStrength: {
-            containsAtLeast: "Contain at least %d of the following %d types of characters:",
-            identicalChars: "No more than %d identical characters in a row (e.g., \"%s\" not allowed)",
-            nonEmpty: "Non-empty password required",
-            numbers: "Numbers (i.e. 0-9)",
-            lengthAtLeast: "At least %d characters in length",
-            lowerCase: "Lower case letters (a-z)",
-            shouldContain: "Should contain:",
-            specialCharacters: "Special characters (e.g. !@#$%^&*)",
-            upperCase: "Upper case letters (A-Z)"
-        },
-        successMessage: "Your password has been reset successfully.",
-        configurationError: "An error ocurred. There appears to be a misconfiguration in the form.",
-        networkError: "The server cannot be reached, there is a problem with the network.",
-        timeoutError: "The server cannot be reached, please try again.",
-        serverError: "There was an error processing the password reset.",
-        headerText: "Enter a new password for<br />{email}",
-        title: "Changer le mot de passe",
-        weakPasswordError: "Le mot de passe est trop faible.",
-        passwordHistoryError: "Le mot de passe a déjà été utilisé."
-    }
-}
+Auth0ChangePassword.initializeDict({
+    title: "Changer le mot de passe"
+});
