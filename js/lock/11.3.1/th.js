@@ -119,7 +119,7 @@ if (typeof Auth0 != 'undefined') {
 }
 
 //password reset page
-//as Auth0 does not support similar options (languageDictionary), we have to declare a global function to get language translation
+//Auth0 does not support language options for password reset page, have to declare a global function to get language dictionary
 window.GetResetPasswordLangDict = function () {
     return {
         "passwordPlaceholder": "รหัสผ่านใหม่ของคุณ",
