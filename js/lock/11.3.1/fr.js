@@ -120,6 +120,6 @@ if (window.location.pathname.indexOf('login') != -1)
 
 //password reset
 //as Auth0 does not support similar options (languageDictionary), we have to declare a global variable for language translation
-Auth0ChangePassword.initializeDict({
+window.GetResetPasswordLangDict = function() {
     title: "Changer le mot de passe"
-});
+};
